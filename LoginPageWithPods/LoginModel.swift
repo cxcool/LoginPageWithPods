@@ -15,6 +15,8 @@ class LoginToGetResponse {
     //取得json数据并封装到JsonData类
     
     func webConnect(account: String, password: String, callback: ((isOK: Bool) -> Void)) {
+        println(account)
+        println(password)
         //网页请求
         let parameters = ["mobile": account, "password": password] //参数
         let url = "http://120.25.154.7/api-login"  //地址

@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3E3F6B2A3A0CC81AE26D1635 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5BEB6D5DD960F0D69ED78A /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7E03C5AE1BA2A89400B3D70C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C5AD1BA2A89400B3D70C /* LoginView.swift */; };
+		7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714441BA66CD700F95CD1 /* WebViewPage.swift */; };
+		7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714461BA6718600F95CD1 /* WebPageViewController.swift */; };
 		7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */; };
-		7E5ED6EC1BA1111A004A5051 /* head0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5ED6EB1BA1111A004A5051 /* head0.png */; };
 		7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE101BA02ED50049E5F1 /* AppDelegate.swift */; };
 		7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE121BA02ED50049E5F1 /* ViewController.swift */; };
-		7EA8EE161BA02ED50049E5F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8EE141BA02ED50049E5F1 /* Main.storyboard */; };
 		7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8EE171BA02ED50049E5F1 /* Images.xcassets */; };
-		7EA8EE1B1BA02ED50049E5F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8EE191BA02ED50049E5F1 /* LaunchScreen.xib */; };
 		7EA8EE271BA02ED50049E5F1 /* LoginPageWithPodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */; };
+		7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */; };
+		7EAC96891BAA826900DC6510 /* BedRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96881BAA826900DC6510 /* BedRoomView.swift */; };
+		7EAC968B1BAA852B00DC6510 /* BedRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */; };
+		7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96921BAA914600DC6510 /* MainPageController.swift */; };
+		7EAC96951BAA940400DC6510 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */; };
+		7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96961BAA989F00DC6510 /* MainPageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +36,25 @@
 
 /* Begin PBXFileReference section */
 		7BCA601C96D030846682FEF8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7E03C5AD1BA2A89400B3D70C /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7E5714441BA66CD700F95CD1 /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		7E5714461BA6718600F95CD1 /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = LoginPageWithPods/LoginModel.swift; sourceTree = "<group>"; };
-		7E5ED6EB1BA1111A004A5051 /* head0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head0.png; sourceTree = "<group>"; };
 		7E7B05381BA03789003E0BAB /* LoginPageWithPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LoginPageWithPods-Bridging-Header.h"; path = "LoginPageWithPods/LoginPageWithPods-Bridging-Header.h"; sourceTree = "<group>"; };
 		7EA8EE0B1BA02ED50049E5F1 /* LoginPageWithPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPageWithPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA8EE0F1BA02ED50049E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA8EE101BA02ED50049E5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = LoginPageWithPods/AppDelegate.swift; sourceTree = "<group>"; };
 		7EA8EE121BA02ED50049E5F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = LoginPageWithPods/ViewController.swift; sourceTree = "<group>"; };
-		7EA8EE151BA02ED50049E5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EA8EE171BA02ED50049E5F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7EA8EE1A1BA02ED50049E5F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7EA8EE201BA02ED50049E5F1 /* LoginPageWithPodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginPageWithPodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA8EE251BA02ED50049E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageWithPodsTests.swift; sourceTree = "<group>"; };
+		7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
+		7EAC96881BAA826900DC6510 /* BedRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedRoomView.swift; sourceTree = "<group>"; };
+		7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedRoomViewController.swift; sourceTree = "<group>"; };
+		7EAC96921BAA914600DC6510 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
+		7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		7EAC96961BAA989F00DC6510 /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
 		9D5BEB6D5DD960F0D69ED78A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D832C79A23C311B72BD247FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +89,6 @@
 		7E5ED6EA1BA110E9004A5051 /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				7E5ED6EB1BA1111A004A5051 /* head0.png */,
 			);
 			name = Pics;
 			sourceTree = "<group>";
@@ -86,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				7E7B05381BA03789003E0BAB /* LoginPageWithPods-Bridging-Header.h */,
-				7EA8EE191BA02ED50049E5F1 /* LaunchScreen.xib */,
-				7EA8EE141BA02ED50049E5F1 /* Main.storyboard */,
 				7EA8EE101BA02ED50049E5F1 /* AppDelegate.swift */,
 			);
 			name = Application;
@@ -103,6 +112,10 @@
 		7E917E291BA184E3005FCA2C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7EAC968D1BAA8F6A00DC6510 /* FunctionMoudel */,
+				7EA8EE121BA02ED50049E5F1 /* ViewController.swift */,
+				7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */,
+				7EAC96921BAA914600DC6510 /* MainPageController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -110,7 +123,9 @@
 		7E917E2A1BA184ED005FCA2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7EA8EE121BA02ED50049E5F1 /* ViewController.swift */,
+				7EAC968F1BAA905700DC6510 /* FunctionView */,
+				7E03C5AD1BA2A89400B3D70C /* LoginView.swift */,
+				7EAC96961BAA989F00DC6510 /* MainPageCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -118,6 +133,7 @@
 		7E917E2B1BA184F2005FCA2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -239,6 +255,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7EAC968D1BAA8F6A00DC6510 /* FunctionMoudel */ = {
+			isa = PBXGroup;
+			children = (
+				7E5714461BA6718600F95CD1 /* WebPageViewController.swift */,
+				7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */,
+			);
+			name = FunctionMoudel;
+			sourceTree = "<group>";
+		};
+		7EAC968F1BAA905700DC6510 /* FunctionView */ = {
+			isa = PBXGroup;
+			children = (
+				7E5714441BA66CD700F95CD1 /* WebViewPage.swift */,
+				7EAC96881BAA826900DC6510 /* BedRoomView.swift */,
+			);
+			name = FunctionView;
+			sourceTree = "<group>";
+		};
 		A5158E16FE3955C562D8B580 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,9 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA8EE161BA02ED50049E5F1 /* Main.storyboard in Resources */,
-				7EA8EE1B1BA02ED50049E5F1 /* LaunchScreen.xib in Resources */,
-				7E5ED6EC1BA1111A004A5051 /* head0.png in Resources */,
 				7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +431,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */,
 				7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */,
 				7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */,
+				7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */,
+				7E03C5AE1BA2A89400B3D70C /* LoginView.swift in Sources */,
+				7EAC96891BAA826900DC6510 /* BedRoomView.swift in Sources */,
+				7EAC968B1BAA852B00DC6510 /* BedRoomViewController.swift in Sources */,
+				7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */,
+				7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */,
+				7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */,
+				7EAC96951BAA940400DC6510 /* TableViewDataSource.swift in Sources */,
 				7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,27 +463,6 @@
 			targetProxy = 7EA8EE211BA02ED50049E5F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7EA8EE141BA02ED50049E5F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7EA8EE151BA02ED50049E5F1 /* Base */,
-			);
-			name = Main.storyboard;
-			path = LoginPageWithPods;
-			sourceTree = "<group>";
-		};
-		7EA8EE191BA02ED50049E5F1 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7EA8EE1A1BA02ED50049E5F1 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = LoginPageWithPods;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7EA8EE281BA02ED50049E5F1 /* Debug */ = {

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CryptoSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29956116AEA8CF54DCACA629486A4D91</key>
+		<key>12487F8873B18E24D5310FAFAB339E6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A8F421EF011E15A0090F7DA4A40DED6</key>
+		<key>6DF168A9FDE4A7E670817B4227A04782</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F4257774AFF37CD8CCE62813F9700BD</key>
+		<key>A9728AC0D62E2C560C5284BCE8408582</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B9A04D3C9B208813656510FDA8ADAE02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7D19FC26AA21467B0B4FBB35B751B9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

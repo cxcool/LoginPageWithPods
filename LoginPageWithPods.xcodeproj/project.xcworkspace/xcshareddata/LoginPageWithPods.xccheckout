@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>664CD22F-CE6A-472F-A4B6-5BE8287FE113</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LoginPageWithPods</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C55A7900A1E98C1E3F2926DA6F90022D12F9022E</key>
+		<string>https://github.com/cxcool/LoginPageWithPods.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LoginPageWithPods.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C55A7900A1E98C1E3F2926DA6F90022D12F9022E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cxcool/LoginPageWithPods.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C55A7900A1E98C1E3F2926DA6F90022D12F9022E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C55A7900A1E98C1E3F2926DA6F90022D12F9022E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LoginPageWithPods</string>
+		</dict>
+	</array>
+</dict>
+</plist>
