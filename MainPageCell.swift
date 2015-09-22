@@ -15,13 +15,14 @@ class MainPageCell: UITableViewCell {
     var cellImage: UIImageView?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     //设置cell样式
     func configureCell(cell: String, cellImage:String) {
-        
         //image
         self.cellImage = UIImageView(image: UIImage(named: cellImage))
         self.addSubview(self.cellImage!)
@@ -39,8 +40,6 @@ class MainPageCell: UITableViewCell {
             make.centerY.equalTo()(self.mas_centerY)
             make.left.equalTo()(self.cellImage?.mas_right).with().offset()(CGFloat(10))
         }
-        
-        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,9 +49,4 @@ class MainPageCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
 }

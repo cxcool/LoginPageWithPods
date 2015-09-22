@@ -1,23 +1,20 @@
 //
-//  BedRoomViewController.swift
+//  TabBarViewController.swift
 //  LoginPageWithPods
 //
-//  Created by 菜 on 15/9/17.
+//  Created by 菜 on 15/9/22.
 //  Copyright (c) 2015年 菜. All rights reserved.
 //
 
 import UIKit
 
-class BedRoomViewController: UIViewController {
-
-    var bedroomView: BedRoomView!
+class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bedroomView = BedRoomView(frame: CGRectMake(0, 20, self.view.bounds.width, self.view.bounds.height))
-        self.view.addSubview(bedroomView)
-        
+
+        // Do any additional setup after loading the view.
+        self.tabBar.backgroundColor = UIColor.clearColor()
     }
 
     override func didReceiveMemoryWarning() {

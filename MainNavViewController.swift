@@ -9,9 +9,10 @@
 import UIKit
 
 class MainNavViewController: UINavigationController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("nav")
+        //var view = ScrollView(frame: CGRectMake(0, 0, 200, 300))
         // Do any additional setup after loading the view.
     }
 

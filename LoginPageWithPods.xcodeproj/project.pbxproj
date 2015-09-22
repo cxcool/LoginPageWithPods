@@ -12,16 +12,20 @@
 		7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714441BA66CD700F95CD1 /* WebViewPage.swift */; };
 		7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714461BA6718600F95CD1 /* WebPageViewController.swift */; };
 		7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */; };
+		7E6277821BABB2D600B07732 /* TabelViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6277811BABB2D600B07732 /* TabelViewData.plist */; };
+		7E6ADBD11BAFB477009348FC /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD01BAFB477009348FC /* ScrollViewController.swift */; };
+		7E6ADBD31BAFEAE3009348FC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD21BAFEAE3009348FC /* CollectionViewController.swift */; };
+		7E6ADBD61BAFF97D009348FC /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD51BAFF97D009348FC /* CollectionViewLayout.swift */; };
+		7E6ADBD81BB003E8009348FC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD71BB003E8009348FC /* CollectionViewCell.swift */; };
 		7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE101BA02ED50049E5F1 /* AppDelegate.swift */; };
 		7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE121BA02ED50049E5F1 /* ViewController.swift */; };
 		7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8EE171BA02ED50049E5F1 /* Images.xcassets */; };
 		7EA8EE271BA02ED50049E5F1 /* LoginPageWithPodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */; };
 		7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */; };
-		7EAC96891BAA826900DC6510 /* BedRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96881BAA826900DC6510 /* BedRoomView.swift */; };
-		7EAC968B1BAA852B00DC6510 /* BedRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */; };
 		7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96921BAA914600DC6510 /* MainPageController.swift */; };
-		7EAC96951BAA940400DC6510 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */; };
 		7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96961BAA989F00DC6510 /* MainPageCell.swift */; };
+		7EED58341BB1023100D90CF9 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED58331BB1023100D90CF9 /* CollectionReusableView.swift */; };
+		7EED58361BB11DA900D90CF9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED58351BB11DA900D90CF9 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		7E5714441BA66CD700F95CD1 /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		7E5714461BA6718600F95CD1 /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = LoginPageWithPods/LoginModel.swift; sourceTree = "<group>"; };
+		7E6277811BABB2D600B07732 /* TabelViewData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabelViewData.plist; sourceTree = "<group>"; };
+		7E6ADBD01BAFB477009348FC /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		7E6ADBD21BAFEAE3009348FC /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7E6ADBD51BAFF97D009348FC /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
+		7E6ADBD71BB003E8009348FC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7E7B05381BA03789003E0BAB /* LoginPageWithPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LoginPageWithPods-Bridging-Header.h"; path = "LoginPageWithPods/LoginPageWithPods-Bridging-Header.h"; sourceTree = "<group>"; };
 		7EA8EE0B1BA02ED50049E5F1 /* LoginPageWithPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPageWithPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA8EE0F1BA02ED50049E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,11 +59,10 @@
 		7EA8EE251BA02ED50049E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageWithPodsTests.swift; sourceTree = "<group>"; };
 		7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
-		7EAC96881BAA826900DC6510 /* BedRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedRoomView.swift; sourceTree = "<group>"; };
-		7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BedRoomViewController.swift; sourceTree = "<group>"; };
 		7EAC96921BAA914600DC6510 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
-		7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		7EAC96961BAA989F00DC6510 /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
+		7EED58331BB1023100D90CF9 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		7EED58351BB11DA900D90CF9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9D5BEB6D5DD960F0D69ED78A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D832C79A23C311B72BD247FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +101,16 @@
 			name = Pics;
 			sourceTree = "<group>";
 		};
+		7E6ADBD41BAFF936009348FC /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7E6ADBD51BAFF97D009348FC /* CollectionViewLayout.swift */,
+				7E6ADBD71BB003E8009348FC /* CollectionViewCell.swift */,
+				7EED58331BB1023100D90CF9 /* CollectionReusableView.swift */,
+			);
+			name = CollectionLayout;
+			sourceTree = "<group>";
+		};
 		7E917E271BA18367005FCA2C /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,7 @@
 		7E917E2A1BA184ED005FCA2C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E6ADBD41BAFF936009348FC /* CollectionLayout */,
 				7EAC968F1BAA905700DC6510 /* FunctionView */,
 				7E03C5AD1BA2A89400B3D70C /* LoginView.swift */,
 				7EAC96961BAA989F00DC6510 /* MainPageCell.swift */,
@@ -133,7 +152,7 @@
 		7E917E2B1BA184F2005FCA2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7EAC96941BAA940400DC6510 /* TableViewDataSource.swift */,
+				7E6277811BABB2D600B07732 /* TabelViewData.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,7 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				7E5714461BA6718600F95CD1 /* WebPageViewController.swift */,
-				7EAC968A1BAA852B00DC6510 /* BedRoomViewController.swift */,
+				7E6ADBD01BAFB477009348FC /* ScrollViewController.swift */,
+				7E6ADBD21BAFEAE3009348FC /* CollectionViewController.swift */,
+				7EED58351BB11DA900D90CF9 /* TabBarViewController.swift */,
 			);
 			name = FunctionMoudel;
 			sourceTree = "<group>";
@@ -268,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				7E5714441BA66CD700F95CD1 /* WebViewPage.swift */,
-				7EAC96881BAA826900DC6510 /* BedRoomView.swift */,
 			);
 			name = FunctionView;
 			sourceTree = "<group>";
@@ -365,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6277821BABB2D600B07732 /* TabelViewData.plist in Resources */,
 				7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,17 +452,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E6ADBD31BAFEAE3009348FC /* CollectionViewController.swift in Sources */,
 				7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */,
 				7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */,
 				7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */,
 				7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */,
 				7E03C5AE1BA2A89400B3D70C /* LoginView.swift in Sources */,
-				7EAC96891BAA826900DC6510 /* BedRoomView.swift in Sources */,
-				7EAC968B1BAA852B00DC6510 /* BedRoomViewController.swift in Sources */,
 				7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */,
+				7EED58341BB1023100D90CF9 /* CollectionReusableView.swift in Sources */,
+				7E6ADBD11BAFB477009348FC /* ScrollViewController.swift in Sources */,
 				7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */,
+				7E6ADBD61BAFF97D009348FC /* CollectionViewLayout.swift in Sources */,
+				7E6ADBD81BB003E8009348FC /* CollectionViewCell.swift in Sources */,
 				7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */,
-				7EAC96951BAA940400DC6510 /* TableViewDataSource.swift in Sources */,
+				7EED58361BB11DA900D90CF9 /* TabBarViewController.swift in Sources */,
 				7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
