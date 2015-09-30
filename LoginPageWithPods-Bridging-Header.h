@@ -5,3 +5,5 @@
 #import "Masonry/Masonry.h"
 #import "sqlite3.h"
 #import "FMDB.h"
+#import "WXApiObject.h"
+#import "WXApi.h"

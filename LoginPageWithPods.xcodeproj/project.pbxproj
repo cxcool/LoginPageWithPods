@@ -11,8 +11,14 @@
 		7E03C5AE1BA2A89400B3D70C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C5AD1BA2A89400B3D70C /* LoginView.swift */; };
 		7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714441BA66CD700F95CD1 /* WebViewPage.swift */; };
 		7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714461BA6718600F95CD1 /* WebPageViewController.swift */; };
+		7E58008D1BBBCABB000A98EF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */; };
 		7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */; };
 		7E6277821BABB2D600B07732 /* TabelViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6277811BABB2D600B07732 /* TabelViewData.plist */; };
+		7E64B0CC1BBBA89700D3EF9D /* WeiXinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */; };
+		7E64B0D11BBBB65100D3EF9D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E94DE531BB39E46004DFFF1 /* libsqlite3.0.dylib */; };
+		7E64B0DF1BBBBCB900D3EF9D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64B0BC1BBB944100D3EF9D /* SystemConfiguration.framework */; };
+		7E64B0E01BBBBCC600D3EF9D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64B0BE1BBB949600D3EF9D /* libz.dylib */; };
+		7E64B0E11BBBBCFD00D3EF9D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64B0C01BBB94BC00D3EF9D /* libc++.dylib */; };
 		7E65527B1BB9272D00DAEEF2 /* QRScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E65527A1BB9272D00DAEEF2 /* QRScanController.swift */; };
 		7E6ADBD11BAFB477009348FC /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD01BAFB477009348FC /* ScrollViewController.swift */; };
 		7E6ADBD31BAFEAE3009348FC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD21BAFEAE3009348FC /* CollectionViewController.swift */; };
@@ -21,6 +27,7 @@
 		7E8636951BBA2BE30047E400 /* Location.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E8636941BBA2BE30047E400 /* Location.plist */; };
 		7E8636981BBA6B950047E400 /* QRCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8636971BBA6B950047E400 /* QRCreateViewController.swift */; };
 		7E86369A1BBA7AB60047E400 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8636991BBA7AB60047E400 /* NotificationViewController.swift */; };
+		7E8C0DFE1BBBC7CB00688358 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8C0DFD1BBBC7CB00688358 /* CoreTelephony.framework */; };
 		7EA062A11BB4D77900B6A64E /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA062A01BB4D77900B6A64E /* CellData.swift */; };
 		7EA062A31BB4E3BC00B6A64E /* MainPageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA062A21BB4E3BC00B6A64E /* MainPageDataSource.swift */; };
 		7EA062A51BB4EED800B6A64E /* AddCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA062A41BB4EED800B6A64E /* AddCellView.swift */; };
@@ -60,8 +67,15 @@
 		7E03C5AD1BA2A89400B3D70C /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7E5714441BA66CD700F95CD1 /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		7E5714461BA6718600F95CD1 /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		7E58008B1BBBCABB000A98EF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		7E58008C1BBBCABB000A98EF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = LoginPageWithPods/LoginModel.swift; sourceTree = "<group>"; };
 		7E6277811BABB2D600B07732 /* TabelViewData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabelViewData.plist; sourceTree = "<group>"; };
+		7E64B0BC1BBB944100D3EF9D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E64B0BE1BBB949600D3EF9D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7E64B0C01BBB94BC00D3EF9D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiXinViewController.swift; sourceTree = "<group>"; };
 		7E65527A1BB9272D00DAEEF2 /* QRScanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanController.swift; sourceTree = "<group>"; };
 		7E6ADBD01BAFB477009348FC /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		7E6ADBD21BAFEAE3009348FC /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +84,7 @@
 		7E8636941BBA2BE30047E400 /* Location.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Location.plist; sourceTree = "<group>"; };
 		7E8636971BBA6B950047E400 /* QRCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCreateViewController.swift; sourceTree = "<group>"; };
 		7E8636991BBA7AB60047E400 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		7E8C0DFD1BBBC7CB00688358 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7E94DE531BB39E46004DFFF1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		7E94DE571BB3A07D004DFFF1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		7EA062A01BB4D77900B6A64E /* CellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
@@ -114,6 +129,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8C0DFE1BBBC7CB00688358 /* CoreTelephony.framework in Frameworks */,
+				7E64B0E11BBBBCFD00D3EF9D /* libc++.dylib in Frameworks */,
+				7E58008D1BBBCABB000A98EF /* libWeChatSDK.a in Frameworks */,
+				7E64B0E01BBBBCC600D3EF9D /* libz.dylib in Frameworks */,
+				7E64B0DF1BBBBCB900D3EF9D /* SystemConfiguration.framework in Frameworks */,
+				7E64B0D11BBBB65100D3EF9D /* libsqlite3.0.dylib in Frameworks */,
 				7EFF5AC51BB3CB6100F1DBDA /* libsqlite3.dylib in Frameworks */,
 				3E3F6B2A3A0CC81AE26D1635 /* Pods.framework in Frameworks */,
 			);
@@ -132,6 +153,10 @@
 		6D6D33505367FD889932725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8C0DFD1BBBC7CB00688358 /* CoreTelephony.framework */,
+				7E64B0C01BBB94BC00D3EF9D /* libc++.dylib */,
+				7E64B0BE1BBB949600D3EF9D /* libz.dylib */,
+				7E64B0BC1BBB944100D3EF9D /* SystemConfiguration.framework */,
 				7EFF5AC71BB3CD4100F1DBDA /* SQLite.framework */,
 				7E94DE571BB3A07D004DFFF1 /* libsqlite3.dylib */,
 				7E94DE531BB39E46004DFFF1 /* libsqlite3.0.dylib */,
@@ -145,6 +170,16 @@
 			children = (
 			);
 			name = Pics;
+			sourceTree = "<group>";
+		};
+		7E64B0C21BBB952000D3EF9D /* ShareWeiXin */ = {
+			isa = PBXGroup;
+			children = (
+				7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */,
+				7E58008B1BBBCABB000A98EF /* WXApi.h */,
+				7E58008C1BBBCABB000A98EF /* WXApiObject.h */,
+			);
+			name = ShareWeiXin;
 			sourceTree = "<group>";
 		};
 		7E6ADBD41BAFF936009348FC /* CollectionLayout */ = {
@@ -239,6 +274,7 @@
 		7E917E301BA18529005FCA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7E64B0C21BBB952000D3EF9D /* ShareWeiXin */,
 				7EC3237A1BB3DB8C00767447 /* FMDB */,
 			);
 			name = Utils;
@@ -337,6 +373,7 @@
 				7E65527A1BB9272D00DAEEF2 /* QRScanController.swift */,
 				7E8636971BBA6B950047E400 /* QRCreateViewController.swift */,
 				7E8636991BBA7AB60047E400 /* NotificationViewController.swift */,
+				7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */,
 			);
 			name = FunctionMoudel;
 			sourceTree = "<group>";
@@ -537,6 +574,7 @@
 				7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */,
 				7EC3237E1BB3DDE500767447 /* DataSource.swift in Sources */,
 				7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */,
+				7E64B0CC1BBBA89700D3EF9D /* WeiXinViewController.swift in Sources */,
 				7EA062A11BB4D77900B6A64E /* CellData.swift in Sources */,
 				7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */,
 				7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */,
@@ -673,10 +711,17 @@
 				INFOPLIST_FILE = LoginPageWithPods/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoginPageWithPods-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -689,9 +734,16 @@
 				INFOPLIST_FILE = LoginPageWithPods/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoginPageWithPods-Bridging-Header.h";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

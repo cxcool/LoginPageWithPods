@@ -88,6 +88,9 @@ class MainPageController: UITableViewController, UISearchBarDelegate {
         case "notification":
             var notification = NotificationViewController()
             self.navigationController?.pushViewController(notification, animated: true)
+        case "weixin":
+            var weixin = WeiXinViewController()
+            self.navigationController?.pushViewController(weixin, animated: true)
 
         default: break
         }
