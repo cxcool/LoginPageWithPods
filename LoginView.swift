@@ -164,7 +164,7 @@ class LoginView: UIView, UITextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-        //键盘监听 收起键盘
+    //键盘监听 收起键盘
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         switch textField {
         case accountTextField:

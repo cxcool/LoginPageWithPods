@@ -13,6 +13,7 @@ class MainPageCell: UITableViewCell {
 
     var cellName: UILabel?
     var cellImage: UIImageView?
+    var cellId: Int32!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -22,7 +23,7 @@ class MainPageCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     //设置cell样式
-    func configureCell(cell: String, cellImage:String) {
+    func configureCell(cell: String, cellImage:String, cellId: Int32) {
         //image
         self.cellImage = UIImageView(image: UIImage(named: cellImage))
         self.addSubview(self.cellImage!)
@@ -45,7 +46,6 @@ class MainPageCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

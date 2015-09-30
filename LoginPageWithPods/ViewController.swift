@@ -20,7 +20,6 @@ class ViewController: UIViewController{
         var frame: CGRect = CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height)
         homaPage = LoginView(frame: frame)
         homaPage.loginButton.addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchUpInside)
-        
         self.view.addSubview(homaPage)
     }
     
@@ -65,6 +64,8 @@ class ViewController: UIViewController{
             println("action 好")
             var mainPage = MainNavViewController(rootViewController: MainPageController())
             self.presentViewController(mainPage, animated: true, completion: nil)
+            //println(self.navigationController?.pushViewController(MainPageController(), animated: true))
+            //self.navigationController?.pushViewController(MainPageController(), animated: true)
         }))
         //cancel
         alertController.addAction(UIAlertAction(title: "算了", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction!) -> Void in
@@ -80,6 +81,7 @@ class ViewController: UIViewController{
         }))
         //弹出alertMsg
         presentViewController(alertController, animated: true, completion: nil)
+
     }
 }
 

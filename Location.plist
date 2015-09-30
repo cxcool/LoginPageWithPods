@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Country</key>
+	<dict>
+		<key>Japan</key>
+		<dict>
+			<key>New item</key>
+			<array>
+				<string></string>
+			</array>
+		</dict>
+		<key>Koera</key>
+		<dict>
+			<key>New item</key>
+			<array>
+				<string></string>
+			</array>
+		</dict>
+		<key>Russian</key>
+		<dict>
+			<key>New item</key>
+			<array>
+				<string></string>
+			</array>
+		</dict>
+		<key>American</key>
+		<dict>
+			<key>NewYork</key>
+			<array>
+				<string>NY1</string>
+				<string>NY2</string>
+				<string>NY3</string>
+			</array>
+			<key>LA</key>
+			<array>
+				<string>LA1</string>
+				<string>LA2</string>
+			</array>
+		</dict>
+		<key>China</key>
+		<dict>
+			<key>重庆</key>
+			<array>
+				<string>沙坪坝区</string>
+				<string>九龙坡区</string>
+			</array>
+			<key>北京</key>
+			<array>
+				<string>海淀区</string>
+				<string>西直门</string>
+			</array>
+			<key>上海</key>
+			<array>
+				<string>浦东区</string>
+				<string>陆家嘴</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
