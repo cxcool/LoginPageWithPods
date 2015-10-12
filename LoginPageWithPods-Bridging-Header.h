@@ -7,3 +7,4 @@
 #import "FMDB.h"
 #import "WXApiObject.h"
 #import "WXApi.h"
+#import <BaiduMapAPI/BMapKit.h>

@@ -12,6 +12,14 @@
 		7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714441BA66CD700F95CD1 /* WebViewPage.swift */; };
 		7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5714461BA6718600F95CD1 /* WebPageViewController.swift */; };
 		7E58008D1BBBCABB000A98EF /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */; };
+		7E5EBAF91BC8A8C500DAE965 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBAF81BC8A8C500DAE965 /* BaiduMapAPI.framework */; };
+		7E5EBAFD1BC8AA1B00DAE965 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBAFC1BC8AA1B00DAE965 /* CoreLocation.framework */; };
+		7E5EBAFF1BC8AA3700DAE965 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBAFE1BC8AA3700DAE965 /* QuartzCore.framework */; };
+		7E5EBB011BC8AA4100DAE965 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBB001BC8AA4100DAE965 /* OpenGLES.framework */; };
+		7E5EBB031BC8ACAA00DAE965 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBB021BC8ACAA00DAE965 /* CoreGraphics.framework */; };
+		7E5EBB051BC8ACB900DAE965 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5EBB041BC8ACB900DAE965 /* Security.framework */; };
+		7E5EBB071BC8ADD500DAE965 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E5EBB061BC8ADD500DAE965 /* mapapi.bundle */; };
+		7E5EBB0B1BC8B4AE00DAE965 /* BMKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5EBB0A1BC8B4AE00DAE965 /* BMKViewController.swift */; };
 		7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */; };
 		7E6277821BABB2D600B07732 /* TabelViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E6277811BABB2D600B07732 /* TabelViewData.plist */; };
 		7E64B0CC1BBBA89700D3EF9D /* WeiXinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */; };
@@ -35,6 +43,7 @@
 		7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE121BA02ED50049E5F1 /* ViewController.swift */; };
 		7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA8EE171BA02ED50049E5F1 /* Images.xcassets */; };
 		7EA8EE271BA02ED50049E5F1 /* LoginPageWithPodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */; };
+		7EAC23CE1BCB5BAC009FC824 /* SearchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC23CD1BCB5BAC009FC824 /* SearchMapView.swift */; };
 		7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */; };
 		7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96921BAA914600DC6510 /* MainPageController.swift */; };
 		7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96961BAA989F00DC6510 /* MainPageCell.swift */; };
@@ -70,6 +79,14 @@
 		7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		7E58008B1BBBCABB000A98EF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		7E58008C1BBBCABB000A98EF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		7E5EBAF81BC8A8C500DAE965 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		7E5EBAFC1BC8AA1B00DAE965 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E5EBAFE1BC8AA3700DAE965 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E5EBB001BC8AA4100DAE965 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7E5EBB021BC8ACAA00DAE965 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E5EBB041BC8ACB900DAE965 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7E5EBB061BC8ADD500DAE965 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		7E5EBB0A1BC8B4AE00DAE965 /* BMKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMKViewController.swift; sourceTree = "<group>"; };
 		7E5ED6E81BA10DEB004A5051 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = LoginPageWithPods/LoginModel.swift; sourceTree = "<group>"; };
 		7E6277811BABB2D600B07732 /* TabelViewData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TabelViewData.plist; sourceTree = "<group>"; };
 		7E64B0BC1BBB944100D3EF9D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -98,6 +115,7 @@
 		7EA8EE201BA02ED50049E5F1 /* LoginPageWithPodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginPageWithPodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA8EE251BA02ED50049E5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA8EE261BA02ED50049E5F1 /* LoginPageWithPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageWithPodsTests.swift; sourceTree = "<group>"; };
+		7EAC23CD1BCB5BAC009FC824 /* SearchMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMapView.swift; sourceTree = "<group>"; };
 		7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
 		7EAC96921BAA914600DC6510 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		7EAC96961BAA989F00DC6510 /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
@@ -129,6 +147,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5EBB051BC8ACB900DAE965 /* Security.framework in Frameworks */,
+				7E5EBB031BC8ACAA00DAE965 /* CoreGraphics.framework in Frameworks */,
+				7E5EBB011BC8AA4100DAE965 /* OpenGLES.framework in Frameworks */,
+				7E5EBAFF1BC8AA3700DAE965 /* QuartzCore.framework in Frameworks */,
+				7E5EBAFD1BC8AA1B00DAE965 /* CoreLocation.framework in Frameworks */,
+				7E5EBAF91BC8A8C500DAE965 /* BaiduMapAPI.framework in Frameworks */,
 				7E8C0DFE1BBBC7CB00688358 /* CoreTelephony.framework in Frameworks */,
 				7E64B0E11BBBBCFD00D3EF9D /* libc++.dylib in Frameworks */,
 				7E58008D1BBBCABB000A98EF /* libWeChatSDK.a in Frameworks */,
@@ -153,6 +177,11 @@
 		6D6D33505367FD889932725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E5EBB041BC8ACB900DAE965 /* Security.framework */,
+				7E5EBB021BC8ACAA00DAE965 /* CoreGraphics.framework */,
+				7E5EBB001BC8AA4100DAE965 /* OpenGLES.framework */,
+				7E5EBAFE1BC8AA3700DAE965 /* QuartzCore.framework */,
+				7E5EBAFC1BC8AA1B00DAE965 /* CoreLocation.framework */,
 				7E8C0DFD1BBBC7CB00688358 /* CoreTelephony.framework */,
 				7E64B0C01BBB94BC00D3EF9D /* libc++.dylib */,
 				7E64B0BE1BBB949600D3EF9D /* libz.dylib */,
@@ -165,21 +194,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7E5ED6EA1BA110E9004A5051 /* Pics */ = {
+		7E5EBAF71BC8A89E00DAE965 /* BaiduMapApi */ = {
 			isa = PBXGroup;
 			children = (
+				7E5EBB061BC8ADD500DAE965 /* mapapi.bundle */,
+				7E5EBAF81BC8A8C500DAE965 /* BaiduMapAPI.framework */,
 			);
-			name = Pics;
+			name = BaiduMapApi;
 			sourceTree = "<group>";
 		};
-		7E64B0C21BBB952000D3EF9D /* ShareWeiXin */ = {
+		7E64B0C21BBB952000D3EF9D /* WXSDK */ = {
 			isa = PBXGroup;
 			children = (
 				7E58008A1BBBCABB000A98EF /* libWeChatSDK.a */,
 				7E58008B1BBBCABB000A98EF /* WXApi.h */,
 				7E58008C1BBBCABB000A98EF /* WXApiObject.h */,
 			);
-			name = ShareWeiXin;
+			name = WXSDK;
 			sourceTree = "<group>";
 		};
 		7E6ADBD41BAFF936009348FC /* CollectionLayout */ = {
@@ -274,7 +305,8 @@
 		7E917E301BA18529005FCA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7E64B0C21BBB952000D3EF9D /* ShareWeiXin */,
+				7E5EBAF71BC8A89E00DAE965 /* BaiduMapApi */,
+				7E64B0C21BBB952000D3EF9D /* WXSDK */,
 				7EC3237A1BB3DB8C00767447 /* FMDB */,
 			);
 			name = Utils;
@@ -290,7 +322,6 @@
 		7E917E321BA18541005FCA2C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7E5ED6EA1BA110E9004A5051 /* Pics */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -374,6 +405,7 @@
 				7E8636971BBA6B950047E400 /* QRCreateViewController.swift */,
 				7E8636991BBA7AB60047E400 /* NotificationViewController.swift */,
 				7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */,
+				7E5EBB0A1BC8B4AE00DAE965 /* BMKViewController.swift */,
 			);
 			name = FunctionMoudel;
 			sourceTree = "<group>";
@@ -383,6 +415,7 @@
 			children = (
 				7E5714441BA66CD700F95CD1 /* WebViewPage.swift */,
 				7EA062A41BB4EED800B6A64E /* AddCellView.swift */,
+				7EAC23CD1BCB5BAC009FC824 /* SearchMapView.swift */,
 			);
 			name = FunctionView;
 			sourceTree = "<group>";
@@ -499,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8636951BBA2BE30047E400 /* Location.plist in Resources */,
+				7E5EBB071BC8ADD500DAE965 /* mapapi.bundle in Resources */,
 				7E6277821BABB2D600B07732 /* TabelViewData.plist in Resources */,
 				7EA8EE181BA02ED50049E5F1 /* Images.xcassets in Resources */,
 			);
@@ -574,6 +608,7 @@
 				7E5714471BA6718600F95CD1 /* WebPageViewController.swift in Sources */,
 				7EC3237E1BB3DDE500767447 /* DataSource.swift in Sources */,
 				7EA8EE131BA02ED50049E5F1 /* ViewController.swift in Sources */,
+				7E5EBB0B1BC8B4AE00DAE965 /* BMKViewController.swift in Sources */,
 				7E64B0CC1BBBA89700D3EF9D /* WeiXinViewController.swift in Sources */,
 				7EA062A11BB4D77900B6A64E /* CellData.swift in Sources */,
 				7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */,
@@ -584,6 +619,7 @@
 				7EA062A51BB4EED800B6A64E /* AddCellView.swift in Sources */,
 				7EED583A1BB121BC00D90CF9 /* Page2ViewController.swift in Sources */,
 				7E6ADBD11BAFB477009348FC /* ScrollViewController.swift in Sources */,
+				7EAC23CE1BCB5BAC009FC824 /* SearchMapView.swift in Sources */,
 				7E65527B1BB9272D00DAEEF2 /* QRScanController.swift in Sources */,
 				7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */,
 				7E6ADBD61BAFF97D009348FC /* CollectionViewLayout.swift in Sources */,
@@ -708,6 +744,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoginPageWithPods/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -716,6 +756,18 @@
 					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
 				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -731,6 +783,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoginPageWithPods/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -739,6 +795,18 @@
 					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
 				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

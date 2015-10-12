@@ -17,13 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     let categoriesIdentifier = "notifi_Identifier"
     let actionHelloIdentifier = "hello_Identifier"
     let actionMissIdentifier = "miss_Identifier"
+    //初始化一个bmkmanager
+    var mapManager: BMKMapManager?
+    var bmkKey = "xBsmtOEmQ0tGgkT08njeBtiM"
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
-        
+        //初始化manager
+        mapManager = BMKMapManager()
+        let ret = mapManager?.start(bmkKey, generalDelegate: nil)
+        if !ret! {
+            NSLog("百度地图初始化失败")
+        }
         //注册微信api
         WXApi.registerApp("weixin307241868")
         
@@ -87,14 +95,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         
         completionHandler() //最后一定要调用
     }
-    //重写
-//    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
-//        return WXApi.handleOpenURL(url, delegate: self)
-//    }
-//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-//        
-//        return WXApi.handleOpenURL(url, delegate: self)
-//    }
+    
+    //回调结果
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        println("返回处理结果")
+        return WXApi.handleOpenURL(url, delegate: self)
+    }
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+        println("返回处理结果2")
+        return WXApi.handleOpenURL(url, delegate: self)
+    }
     
     //创建通知
     func createNotification() {
@@ -111,7 +121,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         notification.alertAction = "alert"
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
-
 }
 
 

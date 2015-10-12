@@ -91,7 +91,10 @@ class MainPageController: UITableViewController, UISearchBarDelegate {
         case "weixin":
             var weixin = WeiXinViewController()
             self.navigationController?.pushViewController(weixin, animated: true)
-
+        case "location":
+            var locationView = BMKViewController()
+            self.navigationController?.pushViewController(locationView, animated: true)
+            
         default: break
         }
     }
