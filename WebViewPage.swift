@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 
 class WebViewPage: UIView {
     var webView: UIWebView = UIWebView() //需要显示的网页

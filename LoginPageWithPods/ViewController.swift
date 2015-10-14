@@ -22,7 +22,6 @@ class ViewController: UIViewController{
         homaPage.loginButton.addTarget(self, action: "login", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(homaPage)
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

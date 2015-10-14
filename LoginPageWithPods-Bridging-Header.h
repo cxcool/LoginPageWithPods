@@ -8,3 +8,4 @@
 #import "WXApiObject.h"
 #import "WXApi.h"
 #import <BaiduMapAPI/BMapKit.h>
+#import "UMessage.h"

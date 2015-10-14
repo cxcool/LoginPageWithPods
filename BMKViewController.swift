@@ -49,8 +49,7 @@ class BMKViewController: UIViewController, BMKMapViewDelegate, BMKLocationServic
     func searchAround() {
         let key = (searchView.textfieldAround?.text)!
         if locationService?.userLocation.location != nil {
-            let coordinate: CLLocationCoordinate2D = (locationService?.userLocation.location.coordinate)!
-            
+            let coordinate = (locationService?.userLocation.location.coordinate)!
             searchAround(key, coordinate: coordinate) //搜索key并标注在地图上
         }else {
             println("位置获取失败")

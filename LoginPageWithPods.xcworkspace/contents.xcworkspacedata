@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LoginPageWithPods.xcodeproj">
+      location = "group:/Users/cool/Work/LoginPageWithPods/CowPlan.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

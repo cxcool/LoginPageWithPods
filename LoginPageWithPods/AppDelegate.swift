@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     let actionMissIdentifier = "miss_Identifier"
     //初始化一个bmkmanager
     var mapManager: BMKMapManager?
-    var bmkKey = "xBsmtOEmQ0tGgkT08njeBtiM"
+    var wxKey = "weixin307241868"
+    var bmkKey = "v4WtIaNEvAKTIOfw4IwM6G7Q" //baidu地图 appkey
+    var umengAppKey = "557e30a567e58e6f68000356" //umeng appkey 公司账户
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -30,10 +32,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         mapManager = BMKMapManager()
         let ret = mapManager?.start(bmkKey, generalDelegate: nil)
         if !ret! {
-            NSLog("百度地图初始化失败")
+            NSLog("百度地图初始化失败, 请检查bmkKey")
         }
         //注册微信api
-        WXApi.registerApp("weixin307241868")
+        WXApi.registerApp(wxKey)
+        //注册umeng消息推送
+        UMessage.startWithAppkey(umengAppKey, launchOptions: launchOptions)
+        if UIDevice.currentDevice().systemVersion >= "8.0" {
+            println(">=8.0")
+            var action1 = UIMutableUserNotificationAction()
+            action1.identifier = "action1_identifier"
+            action1.title="Accept"
+            action1.activationMode = UIUserNotificationActivationMode.Foreground //当点击的时候启动程序
+            
+            var action2 = UIMutableUserNotificationAction() //第二按钮
+            action2.identifier = "action2_identifier"
+            action2.title="Reject"
+            action2.activationMode = UIUserNotificationActivationMode.Background;//当点击的时候不启动程序，在后台处理
+            action2.authenticationRequired = true//需要解锁才能处理,如果action.activationMode = UIUserNotificationActivationModeForeground;则这个属性被忽略；
+            action2.destructive = true
+            
+            var categorys = UIMutableUserNotificationCategory()
+            categorys.identifier = "category1"//这组动作的唯一标示
+            categorys.setActions([action1, action2], forContext: UIUserNotificationActionContext.Default)
+            var userSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge|UIUserNotificationType.Sound|UIUserNotificationType.Alert, categories: [categorys])
+            println("1")
+            UMessage.registerRemoteNotificationAndUserNotificationSettings(userSettings)
+            UMessage.setLogEnabled(true)
+            
+        }else {
+            //register remoteNotification types (iOS 8.0以下) 代码会出现警告(建议替换api)
+            //UMessage.registerForRemoteNotificationTypes(UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound | UIRemoteNotificationType.Alert)
+            println("ios8以下会出现警告")
+        }
         
         //本地通知
         var actionHello = UIMutableUserNotificationAction()//动作1
@@ -62,8 +93,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     }
     
     func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
         println("applicationWillResignActive")
     }
 
@@ -72,30 +101,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
         println("applicationWillEnterForeground")
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         println("applicationDidBecomeActive")
         application.cancelAllLocalNotifications()
         application.applicationIconBadgeNumber = 0
     }
-
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println(deviceToken)
+        UMessage.registerDeviceToken(deviceToken) //umeng注册token
+    }
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        UMessage.didReceiveRemoteNotification(userInfo) //umeng接受远程推送成功
+    }
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println(error)
+    }
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        println("localNotification")
         println(notification.userInfo)
     }
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
         println("identifier\(identifier)")
         //switch identifier...
-        
         completionHandler() //最后一定要调用
     }
-    
     //回调结果
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
         println("返回处理结果")
@@ -105,7 +141,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         println("返回处理结果2")
         return WXApi.handleOpenURL(url, delegate: self)
     }
-    
     //创建通知
     func createNotification() {
         let userInfo: [NSObject: AnyObject] = ["INFO": "msg"]
