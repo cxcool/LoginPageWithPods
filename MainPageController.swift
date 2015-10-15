@@ -94,6 +94,9 @@ class MainPageController: UITableViewController, UISearchBarDelegate {
         case "location":
             var locationView = BMKViewController()
             self.navigationController?.pushViewController(locationView, animated: true)
+        case "chat":
+            var chatView = JMessageViewController()
+            self.navigationController?.pushViewController(chatView, animated: true)
             
         default: break
         }

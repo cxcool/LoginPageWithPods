@@ -9,3 +9,4 @@
 #import "WXApi.h"
 #import <BaiduMapAPI/BMapKit.h>
 #import "UMessage.h"
+#import <JMessage/JMessage.h>

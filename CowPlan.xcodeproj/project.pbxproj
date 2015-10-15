@@ -31,9 +31,17 @@
 		7E6ADBD61BAFF97D009348FC /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD51BAFF97D009348FC /* CollectionViewLayout.swift */; };
 		7E6ADBD81BB003E8009348FC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ADBD71BB003E8009348FC /* CollectionViewCell.swift */; };
 		7E7A004C1BCDED870050B650 /* libUMessage_Sdk_1.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7A004A1BCDED870050B650 /* libUMessage_Sdk_1.2.0.a */; };
-		7E7A00581BCE3F720050B650 /* te.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E7A00571BCE3F720050B650 /* te.mm */; };
 		7E7A005E1BCE46870050B650 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A005D1BCE46870050B650 /* mapapi.bundle */; };
 		7E7A00601BCE469D0050B650 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7A005F1BCE469D0050B650 /* BaiduMapAPI.framework */; };
+		7E84C0271BCF42520082556C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C0261BCF42520082556C /* CFNetwork.framework */; };
+		7E84C0291BCF425B0082556C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C0281BCF425B0082556C /* CoreFoundation.framework */; };
+		7E84C02B1BCF42650082556C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C02A1BCF42650082556C /* Foundation.framework */; };
+		7E84C02D1BCF426D0082556C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C02C1BCF426D0082556C /* UIKit.framework */; };
+		7E84C0351BCF45AF0082556C /* JMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84C0341BCF45AF0082556C /* JMessageViewController.swift */; };
+		7E84C0371BCF749D0082556C /* JMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C0361BCF749D0082556C /* JMessage.framework */; };
+		7E84C0391BCF75030082556C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C0381BCF75030082556C /* AudioToolbox.framework */; };
+		7E84C03B1BCF75200082556C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E84C03A1BCF75200082556C /* CoreAudio.framework */; };
+		7E84C03D1BCF84660082556C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E84C03C1BCF84660082556C /* ChatView.swift */; };
 		7E8636951BBA2BE30047E400 /* Location.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E8636941BBA2BE30047E400 /* Location.plist */; };
 		7E8636981BBA6B950047E400 /* QRCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8636971BBA6B950047E400 /* QRCreateViewController.swift */; };
 		7E86369A1BBA7AB60047E400 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8636991BBA7AB60047E400 /* NotificationViewController.swift */; };
@@ -100,9 +108,17 @@
 		7E6ADBD71BB003E8009348FC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7E7A004A1BCDED870050B650 /* libUMessage_Sdk_1.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.2.0.a; sourceTree = "<group>"; };
 		7E7A004B1BCDED870050B650 /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
-		7E7A00571BCE3F720050B650 /* te.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = te.mm; sourceTree = "<group>"; };
 		7E7A005D1BCE46870050B650 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		7E7A005F1BCE469D0050B650 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		7E84C0261BCF42520082556C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7E84C0281BCF425B0082556C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7E84C02A1BCF42650082556C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E84C02C1BCF426D0082556C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E84C0341BCF45AF0082556C /* JMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMessageViewController.swift; sourceTree = "<group>"; };
+		7E84C0361BCF749D0082556C /* JMessage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JMessage.framework; sourceTree = "<group>"; };
+		7E84C0381BCF75030082556C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7E84C03A1BCF75200082556C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		7E84C03C1BCF84660082556C /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7E8636941BBA2BE30047E400 /* Location.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Location.plist; sourceTree = "<group>"; };
 		7E8636971BBA6B950047E400 /* QRCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCreateViewController.swift; sourceTree = "<group>"; };
 		7E8636991BBA7AB60047E400 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +168,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E84C03B1BCF75200082556C /* CoreAudio.framework in Frameworks */,
+				7E84C0391BCF75030082556C /* AudioToolbox.framework in Frameworks */,
+				7E84C02D1BCF426D0082556C /* UIKit.framework in Frameworks */,
+				7E84C02B1BCF42650082556C /* Foundation.framework in Frameworks */,
+				7E84C0291BCF425B0082556C /* CoreFoundation.framework in Frameworks */,
+				7E84C0271BCF42520082556C /* CFNetwork.framework in Frameworks */,
 				7E7A00601BCE469D0050B650 /* BaiduMapAPI.framework in Frameworks */,
 				7E7A004C1BCDED870050B650 /* libUMessage_Sdk_1.2.0.a in Frameworks */,
 				7E5EBB051BC8ACB900DAE965 /* Security.framework in Frameworks */,
@@ -161,6 +183,7 @@
 				7E5EBAFD1BC8AA1B00DAE965 /* CoreLocation.framework in Frameworks */,
 				7E8C0DFE1BBBC7CB00688358 /* CoreTelephony.framework in Frameworks */,
 				7E64B0E11BBBBCFD00D3EF9D /* libc++.dylib in Frameworks */,
+				7E84C0371BCF749D0082556C /* JMessage.framework in Frameworks */,
 				7E58008D1BBBCABB000A98EF /* libWeChatSDK.a in Frameworks */,
 				7E64B0E01BBBBCC600D3EF9D /* libz.dylib in Frameworks */,
 				7E64B0DF1BBBBCB900D3EF9D /* SystemConfiguration.framework in Frameworks */,
@@ -183,6 +206,12 @@
 		6D6D33505367FD889932725E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E84C03A1BCF75200082556C /* CoreAudio.framework */,
+				7E84C0381BCF75030082556C /* AudioToolbox.framework */,
+				7E84C02C1BCF426D0082556C /* UIKit.framework */,
+				7E84C02A1BCF42650082556C /* Foundation.framework */,
+				7E84C0281BCF425B0082556C /* CoreFoundation.framework */,
+				7E84C0261BCF42520082556C /* CFNetwork.framework */,
 				7E5EBB041BC8ACB900DAE965 /* Security.framework */,
 				7E5EBB021BC8ACAA00DAE965 /* CoreGraphics.framework */,
 				7E5EBB001BC8AA4100DAE965 /* OpenGLES.framework */,
@@ -236,6 +265,14 @@
 				7E7A004B1BCDED870050B650 /* UMessage.h */,
 			);
 			path = UMessage_Sdk_1.2.0;
+			sourceTree = "<group>";
+		};
+		7E84C02E1BCF447D0082556C /* JMessage */ = {
+			isa = PBXGroup;
+			children = (
+				7E84C0361BCF749D0082556C /* JMessage.framework */,
+			);
+			name = JMessage;
 			sourceTree = "<group>";
 		};
 		7E917E271BA18367005FCA2C /* Application */ = {
@@ -320,6 +357,7 @@
 		7E917E301BA18529005FCA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7E84C02E1BCF447D0082556C /* JMessage */,
 				7E7A00491BCDED870050B650 /* UMessage_Sdk_1.2.0 */,
 				7E5EBAF71BC8A89E00DAE965 /* BaiduMapApi */,
 				7E64B0C21BBB952000D3EF9D /* WXSDK */,
@@ -422,7 +460,7 @@
 				7E8636991BBA7AB60047E400 /* NotificationViewController.swift */,
 				7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */,
 				7E5EBB0A1BC8B4AE00DAE965 /* BMKViewController.swift */,
-				7E7A00571BCE3F720050B650 /* te.mm */,
+				7E84C0341BCF45AF0082556C /* JMessageViewController.swift */,
 			);
 			name = FunctionMoudel;
 			sourceTree = "<group>";
@@ -433,6 +471,7 @@
 				7E5714441BA66CD700F95CD1 /* WebViewPage.swift */,
 				7EA062A41BB4EED800B6A64E /* AddCellView.swift */,
 				7EAC23CD1BCB5BAC009FC824 /* SearchMapView.swift */,
+				7E84C03C1BCF84660082556C /* ChatView.swift */,
 			);
 			name = FunctionView;
 			sourceTree = "<group>";
@@ -618,7 +657,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E7A00581BCE3F720050B650 /* te.mm in Sources */,
 				7E6ADBD31BAFEAE3009348FC /* CollectionViewController.swift in Sources */,
 				7EC323751BB3DB4700767447 /* FMDatabase.m in Sources */,
 				7EED58381BB1218800D90CF9 /* Page1ViewController.swift in Sources */,
@@ -650,6 +688,8 @@
 				7E8636981BBA6B950047E400 /* QRCreateViewController.swift in Sources */,
 				7EA062A31BB4E3BC00B6A64E /* MainPageDataSource.swift in Sources */,
 				7EC323781BB3DB4700767447 /* FMDatabaseQueue.m in Sources */,
+				7E84C0351BCF45AF0082556C /* JMessageViewController.swift in Sources */,
+				7E84C03D1BCF84660082556C /* ChatView.swift in Sources */,
 				7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */,
 				7EC323761BB3DB4700767447 /* FMDatabaseAdditions.m in Sources */,
 			);
@@ -789,6 +829,7 @@
 					"-framework",
 					"\"SwiftyJSON\"",
 					"-ObjC",
+					"-all_load",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;
@@ -832,6 +873,7 @@
 					"-framework",
 					"\"SwiftyJSON\"",
 					"-ObjC",
+					"-all_load",
 				);
 				OTHER_LIBTOOLFLAGS = "";
 				PLIST_FILE_OUTPUT_FORMAT = binary;

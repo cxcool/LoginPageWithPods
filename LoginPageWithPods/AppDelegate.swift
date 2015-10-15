@@ -14,14 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
     var window: UIWindow?
     //创建一个notification
     let notification = UILocalNotification()
-    let categoriesIdentifier = "notifi_Identifier"
+    let categoriesIdentifier = "categories_Identifier"
     let actionHelloIdentifier = "hello_Identifier"
     let actionMissIdentifier = "miss_Identifier"
     //初始化一个bmkmanager
     var mapManager: BMKMapManager?
     var wxKey = "weixin307241868"
     var bmkKey = "v4WtIaNEvAKTIOfw4IwM6G7Q" //baidu地图 appkey
+    //umeng
     var umengAppKey = "557e30a567e58e6f68000356" //umeng appkey 公司账户
+    //jpush
+    var jPushAppKey = "292a76883c31873afb5f8007" //jpush的appkey
+    var channel = "" //发行渠道。可不填
+    var apsForProduction = false //jpush产品app是否上线
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -34,38 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         if !ret! {
             NSLog("百度地图初始化失败, 请检查bmkKey")
         }
-        //注册微信api
-        WXApi.registerApp(wxKey)
-        //注册umeng消息推送
-        UMessage.startWithAppkey(umengAppKey, launchOptions: launchOptions)
-        if UIDevice.currentDevice().systemVersion >= "8.0" {
-            println(">=8.0")
-            var action1 = UIMutableUserNotificationAction()
-            action1.identifier = "action1_identifier"
-            action1.title="Accept"
-            action1.activationMode = UIUserNotificationActivationMode.Foreground //当点击的时候启动程序
-            
-            var action2 = UIMutableUserNotificationAction() //第二按钮
-            action2.identifier = "action2_identifier"
-            action2.title="Reject"
-            action2.activationMode = UIUserNotificationActivationMode.Background;//当点击的时候不启动程序，在后台处理
-            action2.authenticationRequired = true//需要解锁才能处理,如果action.activationMode = UIUserNotificationActivationModeForeground;则这个属性被忽略；
-            action2.destructive = true
-            
-            var categorys = UIMutableUserNotificationCategory()
-            categorys.identifier = "category1"//这组动作的唯一标示
-            categorys.setActions([action1, action2], forContext: UIUserNotificationActionContext.Default)
-            var userSettings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge|UIUserNotificationType.Sound|UIUserNotificationType.Alert, categories: [categorys])
-            println("1")
-            UMessage.registerRemoteNotificationAndUserNotificationSettings(userSettings)
-            UMessage.setLogEnabled(true)
-            
-        }else {
-            //register remoteNotification types (iOS 8.0以下) 代码会出现警告(建议替换api)
-            //UMessage.registerForRemoteNotificationTypes(UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound | UIRemoteNotificationType.Alert)
-            println("ios8以下会出现警告")
-        }
-        
         //本地通知
         var actionHello = UIMutableUserNotificationAction()//动作1
         actionHello.identifier = actionHelloIdentifier
@@ -82,50 +55,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         userCategory.identifier = categoriesIdentifier
         userCategory.setActions([actionHello, actionMiss], forContext: UIUserNotificationActionContext.Minimal)
         var categories: NSSet = NSSet(object: userCategory)
-        var userSetting = UIUserNotificationSettings(forTypes:
-            UIUserNotificationType.Sound |
-            UIUserNotificationType.Alert |
-            UIUserNotificationType.Badge,
-            categories: categories as Set<NSObject>)
-        application.registerUserNotificationSettings(userSetting)
+        //注册微信api
+        WXApi.registerApp(wxKey)
+        //umeng启动
+        JPUSHService.setLogOFF()
+        //JPUSHService.setDebugMode()
+        UMessage.startWithAppkey(umengAppKey, launchOptions: launchOptions)
+        //JMessage启动 同时启动push和message
+        JMessage.setupJMessage(launchOptions, appKey: jPushAppKey, channel: channel, apsForProduction: apsForProduction, category: categories as Set<NSObject>)
+        if UIDevice.currentDevice().systemVersion >= "8.0" {
+            //本地设置
+            var userSetting = UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: categories as Set<NSObject>)
+            //本地注册
+            application.registerUserNotificationSettings(userSetting)
+            //Umeng注册
+            UMessage.registerRemoteNotificationAndUserNotificationSettings(userSetting)
+            UMessage.setLogEnabled(true)
+            //JPushc注册
+            JPUSHService.registerForRemoteNotificationTypes(UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: categories as Set<NSObject>)
+        }else {
+            //register remoteNotification types (iOS 8.0以下) 代码会出现警告(建议替换api)
+            //UMessage.registerForRemoteNotificationTypes(UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound | UIRemoteNotificationType.Alert)
+            println("ios8以下会出现警告")
+        }
         println("didFinishLaunchingWithOptions")
         return true
     }
-    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("注册获得的!!!!!!!!!!!!!!!! deviceToken = \(deviceToken)")
+        UMessage.registerDeviceToken(deviceToken) //umeng注册token
+        JPUSHService.registerDeviceToken(deviceToken) //jpush注册touken
+    }
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        println("didReceiveRemoteNotification userinfo = \(userInfo)")
+        UMessage.didReceiveRemoteNotification(userInfo) //umeng接受远程推送成功
+        JPUSHService.handleRemoteNotification(userInfo) //jpush接受远程推送成功
+    }
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println(error) //打印远程推送注册错误
+    }
     func applicationWillResignActive(application: UIApplication) {
         println("applicationWillResignActive")
     }
-
     func applicationDidEnterBackground(application: UIApplication) {
         createNotification()
     }
-
     func applicationWillEnterForeground(application: UIApplication) {
         println("applicationWillEnterForeground")
     }
-
     func applicationDidBecomeActive(application: UIApplication) {
         println("applicationDidBecomeActive")
         application.cancelAllLocalNotifications()
         application.applicationIconBadgeNumber = 0
-    }
-    
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        println(deviceToken)
-        UMessage.registerDeviceToken(deviceToken) //umeng注册token
-    }
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        UMessage.didReceiveRemoteNotification(userInfo) //umeng接受远程推送成功
-    }
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        println(error)
     }
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         println("localNotification")
-        println(notification.userInfo)
     }
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
         println("identifier\(identifier)")

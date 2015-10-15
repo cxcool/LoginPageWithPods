@@ -103,7 +103,7 @@ class SearchMapView: UIView {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        //任意背景取消键盘
+    //任意背景取消键盘
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent?) {
         textfieldLocation!.resignFirstResponder()
         textfieldAround!.resignFirstResponder()
