@@ -8,56 +8,46 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>CryptoSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0734A06C8C8E0098DB3BD2509F72BD1D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>12487F8873B18E24D5310FAFAB339E6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1C5EA90FC4C0D09FE87F2661A534080A</key>
+		<key>831DC2DC74BD9FBEFA0A7729E9ADEAFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FF07B1DEA1C7EFCAB50FB8459F0A521</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7A8FE173EA94C72717836E6BB6C14BF5</key>
+		<key>924823D118261427EA7C9FA4EF55613D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

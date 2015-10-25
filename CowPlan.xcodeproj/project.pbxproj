@@ -57,6 +57,8 @@
 		7EAC96871BAA7DFE00DC6510 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */; };
 		7EAC96931BAA914600DC6510 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96921BAA914600DC6510 /* MainPageController.swift */; };
 		7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAC96961BAA989F00DC6510 /* MainPageCell.swift */; };
+		7EAE0F181BD47EF200CE3870 /* ChatListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE0F171BD47EF200CE3870 /* ChatListDataSource.swift */; };
+		7EAE0F1A1BD4876300CE3870 /* ChatListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAE0F191BD4876300CE3870 /* ChatListController.swift */; };
 		7EC323691BB3DAB900767447 /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC323681BB3DAB900767447 /* FMDatabaseVariadic.swift */; };
 		7EC323751BB3DB4700767447 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3236B1BB3DB4700767447 /* FMDatabase.m */; };
 		7EC323761BB3DB4700767447 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3236D1BB3DB4700767447 /* FMDatabaseAdditions.m */; };
@@ -140,6 +142,8 @@
 		7EAC96861BAA7DFE00DC6510 /* MainNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
 		7EAC96921BAA914600DC6510 /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		7EAC96961BAA989F00DC6510 /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
+		7EAE0F171BD47EF200CE3870 /* ChatListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListDataSource.swift; sourceTree = "<group>"; };
+		7EAE0F191BD4876300CE3870 /* ChatListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListController.swift; sourceTree = "<group>"; };
 		7EC323681BB3DAB900767447 /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
 		7EC3236A1BB3DB4700767447 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		7EC3236B1BB3DB4700767447 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -316,9 +320,11 @@
 		7E917E2B1BA184F2005FCA2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7EA062A21BB4E3BC00B6A64E /* MainPageDataSource.swift */,
 				7E6277811BABB2D600B07732 /* TabelViewData.plist */,
 				7EA062A01BB4D77900B6A64E /* CellData.swift */,
 				7E8636941BBA2BE30047E400 /* Location.plist */,
+				7EAE0F171BD47EF200CE3870 /* ChatListDataSource.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -349,7 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				7EC3237D1BB3DDE500767447 /* DataSource.swift */,
-				7EA062A21BB4E3BC00B6A64E /* MainPageDataSource.swift */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				7E64B0CB1BBBA89700D3EF9D /* WeiXinViewController.swift */,
 				7E5EBB0A1BC8B4AE00DAE965 /* BMKViewController.swift */,
 				7E84C0341BCF45AF0082556C /* JMessageViewController.swift */,
+				7EAE0F191BD4876300CE3870 /* ChatListController.swift */,
 			);
 			name = FunctionMoudel;
 			sourceTree = "<group>";
@@ -671,6 +677,7 @@
 				7E5ED6E91BA10DEB004A5051 /* LoginModel.swift in Sources */,
 				7EAC96971BAA989F00DC6510 /* MainPageCell.swift in Sources */,
 				7E03C5AE1BA2A89400B3D70C /* LoginView.swift in Sources */,
+				7EAE0F181BD47EF200CE3870 /* ChatListDataSource.swift in Sources */,
 				7E5714451BA66CD700F95CD1 /* WebViewPage.swift in Sources */,
 				7EED58341BB1023100D90CF9 /* CollectionReusableView.swift in Sources */,
 				7EA062A51BB4EED800B6A64E /* AddCellView.swift in Sources */,
@@ -688,6 +695,7 @@
 				7E8636981BBA6B950047E400 /* QRCreateViewController.swift in Sources */,
 				7EA062A31BB4E3BC00B6A64E /* MainPageDataSource.swift in Sources */,
 				7EC323781BB3DB4700767447 /* FMDatabaseQueue.m in Sources */,
+				7EAE0F1A1BD4876300CE3870 /* ChatListController.swift in Sources */,
 				7E84C0351BCF45AF0082556C /* JMessageViewController.swift in Sources */,
 				7E84C03D1BCF84660082556C /* ChatView.swift in Sources */,
 				7EA8EE111BA02ED50049E5F1 /* AppDelegate.swift in Sources */,

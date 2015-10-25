@@ -69,26 +69,3 @@ class ScrollViewController: UIViewController, UIScrollViewDelegate {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

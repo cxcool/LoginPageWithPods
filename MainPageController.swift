@@ -76,7 +76,7 @@ class MainPageController: UITableViewController, UISearchBarDelegate {
         case "滑动页面":
             var sview = ScrollViewController()
             self.navigationController?.pushViewController(sview, animated: true)
-        case "segmentBar":
+        case "tabBar":
             var tabbar = TabBarViewController()
             self.navigationController?.pushViewController(tabbar, animated: true)
         case "扫码":
@@ -97,6 +97,9 @@ class MainPageController: UITableViewController, UISearchBarDelegate {
         case "chat":
             var chatView = JMessageViewController()
             self.navigationController?.pushViewController(chatView, animated: true)
+        case "chatlist":
+            var chatListView = ChatListController()
+            self.navigationController?.pushViewController(chatListView, animated: true)
             
         default: break
         }

@@ -57,11 +57,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
         var categories: NSSet = NSSet(object: userCategory)
         //注册微信api
         WXApi.registerApp(wxKey)
+        
         //umeng启动
+        UMessage.startWithAppkey(umengAppKey, launchOptions: launchOptions)
+        
+        //JMessage启动 同时启动push和message
         JPUSHService.setLogOFF()
         //JPUSHService.setDebugMode()
-        UMessage.startWithAppkey(umengAppKey, launchOptions: launchOptions)
-        //JMessage启动 同时启动push和message
         JMessage.setupJMessage(launchOptions, appKey: jPushAppKey, channel: channel, apsForProduction: apsForProduction, category: categories as Set<NSObject>)
         if UIDevice.currentDevice().systemVersion >= "8.0" {
             //本地设置
